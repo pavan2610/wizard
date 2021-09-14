@@ -1,0 +1,48 @@
+<button class="btn" (click)="wizard.open()">Open Wizard</button>
+<clr-wizard #wizard [(clrWizardOpen)]="_open">
+  dfdf
+  <!-- <ng-content select="[wizard]"></ng-content>
+  <clr-wizard-title>
+      <ng-content select="[wizardTitle]"></ng-content>
+  </clr-wizard-title> 
+  
+  <clr-wizard-button> 
+    <ng-content select="[wizardButton]"></ng-content>
+  </clr-wizard-button>  -->
+  <clr-wizard-title >{{ddsWizardTitle}}</clr-wizard-title>
+
+  <clr-wizard-button [type]="'cancel'">Cancel</clr-wizard-button>
+  <clr-wizard-button [type]="'previous'">Back</clr-wizard-button>
+  <clr-wizard-button [type]="'next'">Next</clr-wizard-button>
+  <clr-wizard-button [type]="'finish'">Finish</clr-wizard-button>
+
+  <clr-wizard-page (clrWizardPageCustomButton)="doCustomClick($event)">
+    <ng-template clrPageTitle>Title for page 1</ng-template>
+    <ng-template clrPageNavTitle>Aliquam</ng-template>
+    <ng-template clrPageButtons>
+      <clr-wizard-button [type]="'cancel'">Cancel</clr-wizard-button>
+      <clr-wizard-button [type]="'previous'">Back</clr-wizard-button>
+      <clr-wizard-button [type]="'next'">Next</clr-wizard-button>
+      <clr-wizard-button [type]="'finish'">Finish</clr-wizard-button>
+    </ng-template>
+  </clr-wizard-page>
+
+  <clr-wizard-page *ngIf="stepTwo">
+    <ng-template clrPageTitle>Title for page 2</ng-template>
+    <ng-template clrPageNavTitle>Pellentesque</ng-template>
+  </clr-wizard-page>
+
+  <clr-wizard-page *ngIf="stepTwo">
+    <ng-template clrPageTitle>Title for page 3</ng-template>
+    <ng-template clrPageNavTitle>Vestibulum</ng-template>
+  </clr-wizard-page>
+
+  <clr-wizard-page>
+    <ng-template clrPageTitle>Title for page 4</ng-template>
+    <ng-template clrPageNavTitle>Pellentesque</ng-template>
+  </clr-wizard-page>
+  <clr-wizard-page>
+    <ng-template clrPageTitle>Summary</ng-template>
+    <ng-template clrPageNavTitle>Summary</ng-template>
+  </clr-wizard-page>
+</clr-wizard>

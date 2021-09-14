@@ -1,0 +1,89 @@
+ //Overriding Wizard Selectors
+.clr-wizard .clr-wizard-stepnav-item.active .clr-wizard-stepnav-link {
+  background-color: #E7F2FB;
+  
+  
+ }
+
+//Completed Steps
+.clr-wizard .clr-wizard-stepnav-item.complete {
+   box-shadow:none;
+  
+ }
+.clr-wizard .clr-wizard-btn.btn-link {
+  color: #0076CE;
+}
+
+//Wizard Items
+.clr-wizard .clr-wizard-stepnav-item {
+  box-shadow:none;
+  color: #333333;
+  
+}
+//Active Wizard Step
+.clr-wizard .clr-wizard-stepnav-item.active .btn-link{
+  box-shadow: 0.2rem 0 0 #0076CE inset;
+  color: #0076CE;
+}
+
+//Wizard Title
+.clr-wizard .clr-wizard-title {
+  color: #333333;
+  margin-top: 0;
+  // padding-top: 18px;
+  // padding-left: 24px;
+  // padding-right: 549px;
+  // padding-bottom: 403px;
+  flex: 0 0 auto;
+  line-height: 32px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+//Modal Wrapper
+.clr-wizard .modal-content-wrapper {
+
+  // width: 800px;
+  // height: 450px;
+}
+
+//Modal Size - Overriding XL
+.clr-wizard.wizard-xl .modal-dialog {
+  
+  // width: 800px;
+  // height: 450px;
+}
+
+//remove steps number
+.clr-wizard .clr-wizard-stepnav-link .clr-wizard-stepnav-link-suffix{
+  display:none;
+}
+
+
+//Primary - Next Button 
+.btn.btn-primary, .btn-primary .btn{
+  color: #FFFFFF;
+  background-color: #0076CE;
+  &:hover{
+    background-color: #0076CE;
+    color: #FFFFFF;
+  }
+}
+
+
+
+//Secondary-Back Button
+.btn.btn-secondary, .btn-secondary .btn{
+  color: #0076CE;
+  border: 1px solid #0076CE;
+  &:hover{
+    color: #0076CE;
+    border: 1px solid #0076CE;
+  }
+}
+
+//Tertiary - Cancel Button
+.btn.btn-link:hover, .btn:hover {
+  color: #0076CE;
+}
+
