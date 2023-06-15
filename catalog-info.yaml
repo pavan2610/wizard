@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: wizard
+  annotations:
+    github.com/project-slug: pavan2610/wizard
+spec:
+  type: other
+  lifecycle: unknown
+  owner: guests
